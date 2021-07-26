@@ -60,7 +60,8 @@ GROUP BY e.team;
 
 /* Challenge 6 */
 SELECT 
-    SUM(1.0*(COALESCE(s.salary,0) + COALESCE(s.bonus, 0))/m.annual_budget)
+    ROUND(SUM(1.0*(COALESCE(s.salary,0) + COALESCE(s.bonus, 0))/m.annual_budget) * 100, 2)
+    as total_compensation_percent_of_annual_budget
 FROM
     employeedetails as e
     LEFT OUTER JOIN managerdetails as m
