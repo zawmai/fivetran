@@ -87,7 +87,27 @@ Database and tables were created in <b>Postgres SQL</b> for testing purposes.
     </code></pre>
 
 ## Database Architecture
+Answer the following using [fivetran docs](https://fivetran.com/docs/getting-started), [knowledge base](https://fivetran.com/docs/getting-started), and [internet searches](http://letmegooglethat.com/?q=Internet+searches). Respond to teach as if you were responding to a customer through a ticketing system.
 
+1. “My company is looking to add a Postgres connector. We are unsure if we should choose WAL or XMIN replication. What is your suggestion?”
+    <pre><code>
+    Hi John Doe,
+    <br>
+    In most scenarios, we recommend the WAL method. You should only consider
+    XMIN for updating records when WAL is not available.
+    <br>
+    Currently, you can use WAL method with either pgoutput or test_decide plugins.
+    You can see which plugins are supported for your Postgres instance here:
+    https://fivetran.com/docs/databases/postgresql#supportedservices.
+    <br>
+    Read more about WAL logical replciation and XMIN here:
+    https://fivetran.com/docs/databases/postgresql#updatingdata
+    <br>
+    Please reach out if you have further questions. I'm happy to help.
+    <br>
+    Best Regards,
+    Zaw Mai
+    </code></pre>
 ## Troubleshooting
 
 ### Challenge 1 - Logs / Monitoring
