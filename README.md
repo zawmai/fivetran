@@ -280,25 +280,26 @@ John Doe
     - After troubleshooting is successful, I will reach out to the Customer Success team or personally add the learning to our public knowledge base.
 <br>
 2. Please write your first response to this issue below.
-    - <pre><code>
-      Hi John Doe,
-      <br>
-      Please make sure the followings configured for all ten of your connectors:
-      1. User Access is granted to Fivetran for data sources.
-      2. Source table names, sheet urls, or sftp/ftp urls are correct.
-      3. If using authentication, make sure your user/password, ports, and authentication method are correct.
-      4. Double check Fivetran supports your data instance for application, database, and files here:
-        - https://fivetran.com/docs/files
-        - https://fivetran.com/docs/databases
-        - https://fivetran.com/docs/databases
-      <br>
-      I understand this must be frustrating for all ten connectors to fail sync.
-      <br>
-      Please reach out if you have further questions. I'm happy to help.
-      <br>
-      Best Regards,
-      Zaw Mai
-      </code></pre>
+<pre><code>
+Hi John Doe,
+<br>
+Please make sure the followings configured for all ten of your connectors:
+1.  User Access is granted to Fivetran for data sources.
+2.  Source table names, sheet urls, or sftp/ftp urls are correct.
+3.  If using authentication, make sure your user/password, ports, and 
+    authentication method are correct.
+4.  Double check Fivetran supports your data instance for application, database,  
+    and files here:
+    - https://fivetran.com/docs/files
+    - https://fivetran.com/docs/databases
+    - https://fivetran.com/docs/databases
+<br>
+I understand this must be frustrating for all ten connectors to fail sync.
+Please reach out if you have further questions. I'm happy to help.
+<br>
+Best Regards,
+Zaw Mai
+</code></pre>
 
 ### Challenge 2
 
@@ -306,10 +307,22 @@ Assume that you provided a workaround for a bug. The customer is not satisfied w
 <pre><code>
 Hi John Doe,
 <br>
-sup
-<br>
-Please reach out if you have further questions. I'm happy to help.
-<br>
-Best Regards,
+I sincerely would like to apologize that the workaround fix did not satisfy you.
+I know this is inconvenient for your business operations and I can only imagine
+the negative impact this has causesd.
+
+Our engineering team is working on an official fix to be deployed at the end of
+the quarter. Unforunately, we can't allocate more resource for a hotfix at this
+time.
+
+I've reported the situation to my manager. In the meantime, please keep
+using the workaround and I will personally give you an udpate when the next
+release is out.
+
+I know this isn't what you want to hear, and again I want apologize the
+inconvenience caused to your business. Thank you for understanding and
+your support of Fivetran.
+
+Sincerely,
 Zaw Mai
 </code></pre>
