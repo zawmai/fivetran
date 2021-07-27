@@ -251,11 +251,11 @@ Gotham City Parks brand identity
     - Telnet: your local machine can send server application commands on TCP Port 80 with machine network IP address of 1.1.1.1.
 
 **References:**\
-[https://www.quora.com/What-is-the-difference-between-Telnet-and-Ping](https://www.quora.com/What-is-the-difference-between-Telnet-and-Ping)
-[https://www.ibm.com/docs/en/zos/2.2.0?topic=internets-tcpip-tcp-udp-ip-protocols](https://www.ibm.com/docs/en/zos/2.2.0?topic=internets-tcpip-tcp-udp-ip-protocols)
-[https://www.geeksforgeeks.org/layers-of-osi-model/](https://www.geeksforgeeks.org/layers-of-osi-model/)
-[https://en.wikipedia.org/wiki/OSI_model#Comparison_to_other_networking_suites](https://en.wikipedia.org/wiki/OSI_model#Comparison_to_other_networking_suites)
-[https://superuser.com/questions/552757/tcp-connections-session-and-ports](https://superuser.com/questions/552757/tcp-connections-session-and-ports)
+[https://www.quora.com/What-is-the-difference-between-Telnet-and-Ping](https://www.quora.com/What-is-the-difference-between-Telnet-and-Ping)\
+[https://www.ibm.com/docs/en/zos/2.2.0?topic=internets-tcpip-tcp-udp-ip-protocols](https://www.ibm.com/docs/en/zos/2.2.0?topic=internets-tcpip-tcp-udp-ip-protocols)\
+[https://www.geeksforgeeks.org/layers-of-osi-model/](https://www.geeksforgeeks.org/layers-of-osi-model/)\
+[https://en.wikipedia.org/wiki/OSI_model#Comparison_to_other_networking_suites](https://en.wikipedia.org/wiki/OSI_model#Comparison_to_other_networking_suites)\
+[https://superuser.com/questions/552757/tcp-connections-session-and-ports](https://superuser.com/questions/552757/tcp-connections-session-and-ports)\
 
 ## Communications
 
