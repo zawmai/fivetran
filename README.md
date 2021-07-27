@@ -272,15 +272,44 @@ John Doe
 </pre>
 
 1. What troubleshooting steps would you take with a general question like this?
+    - If I have access to their account, I would take a quick look at how their connecters are configured.
+    - If all ten of the connectors are failing, then I will try to find non-application specific causes for sync failures before diving into application-specific setup causes.
+    - Then, I will search through the FAQs and Knowledge Base to see if there's common "gotchas" of sync failuer to review. I will relay the troubleshooting guide to the customer.
+    - When the customer fails to troubleshoot on his or her own, I will go through
+    the log file to look through error messages for possible lead/hint. This requires more "hand holding."
+    - After troubleshooting is successful, I will reach out to the Customer Success team or personally add the learning to our public knowledge base.
+<br>
 2. Please write your first response to this issue below.
+    - <pre><code>
+      Hi John Doe,
+      <br>
+      Please make sure the followings configured for all ten of your connectors:
+      1. User Access is granted to Fivetran for data sources.
+      2. Source table names, sheet urls, or sftp/ftp urls are correct.
+      3. If using authentication, make sure your user/password, ports, and authentication method are correct.
+      4. Double check Fivetran supports your data instance for application, database, and files here:
+        - https://fivetran.com/docs/files
+        - https://fivetran.com/docs/databases
+        - https://fivetran.com/docs/databases
+      <br>
+      I understand this must be frustrating for all ten connectors to fail sync.
+      <br>
+      Please reach out if you have further questions. I'm happy to help.
+      <br>
+      Best Regards,
+      Zaw Mai
+      </code></pre>
 
 ### Challenge 2
 
 Assume that you provided a workaround for a bug. The customer is not satisfied with the workaround and indicates that our engineering team needs to re-prioritize the issue and provide an immediate fix since it is affecting their business. However, our engineering is guaranteeing a fix will be deployed at the end of the quarter. Please provide your response to the customer.
-
-<pre>
+<pre><code>
 Hi John Doe,
-
-Sincerely,
+<br>
+sup
+<br>
+Please reach out if you have further questions. I'm happy to help.
+<br>
+Best Regards,
 Zaw Mai
-</pre>
+</code></pre>
