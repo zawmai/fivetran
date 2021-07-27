@@ -207,9 +207,9 @@ API GET challenge, have the candidate provide us with the results of a GET reque
 3. Provide a working API call to pull all names from the project tracker table using curl headers for authentication.
 
 **Answers below:**\
-Used "[curl](https://devqa.io/curl-sending-api-requests/)" command-line tool to make API GET request.
-Used "[jq](https://stedolan.github.io/jq/)" command-line tool to parse json response body. Additional guide [here](https://www.baeldung.com/linux/jq-command-json).
-Tested on Ubuntu 20.04 linux distro.
+Used "[curl](https://devqa.io/curl-sending-api-requests/)" command-line tool to make API GET request.\
+Used "[jq](https://stedolan.github.io/jq/)" command-line tool to parse json response body. Additional guide [here](https://www.baeldung.com/linux/jq-command-json).\
+Tested on Ubuntu 20.04 linux distro.\
 Tested on Airtable's prebuilt Project Tracker template.
 <pre><code>
 curl https://api.airtable.com/v0/app9S4NyrBMAWPLHM/Design%20projects?fields%5B%5D=Name -H "Authorization: Bearer keyOChwCcZRQcNfIu" | jq -r '.records | .[].fields.Name'
@@ -255,7 +255,7 @@ Gotham City Parks brand identity
 [https://www.ibm.com/docs/en/zos/2.2.0?topic=internets-tcpip-tcp-udp-ip-protocols](https://www.ibm.com/docs/en/zos/2.2.0?topic=internets-tcpip-tcp-udp-ip-protocols)\
 [https://www.geeksforgeeks.org/layers-of-osi-model/](https://www.geeksforgeeks.org/layers-of-osi-model/)\
 [https://en.wikipedia.org/wiki/OSI_model#Comparison_to_other_networking_suites](https://en.wikipedia.org/wiki/OSI_model#Comparison_to_other_networking_suites)\
-[https://superuser.com/questions/552757/tcp-connections-session-and-ports](https://superuser.com/questions/552757/tcp-connections-session-and-ports)\
+[https://superuser.com/questions/552757/tcp-connections-session-and-ports](https://superuser.com/questions/552757/tcp-connections-session-and-ports)
 
 ## Communications
 
