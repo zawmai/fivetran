@@ -181,12 +181,12 @@ You are tasked to analyze the following log file.
 11&nbsp;&nbsp;2019-10-11&nbsp;&nbsp;500&nbsp;&nbsp;192.168.1.1&nbsp;&nbsp;test
 </pre>
 
-**Answers below:**
 Using any method you like. Write the specific step by step instructions to execute the following tasks:
 
 - Extract all IP addresses into a single column.
 - Count unique IP addresses
 
+**Answers below:**
 Used bash scripts. Tested on Ubuntu 20.04 linux distro.
 <pre><code>
 #!/bin/bash
@@ -236,6 +236,26 @@ Gotham City Parks brand identity
 </code></pre>
 
 ### Challenge 3 - Networking
+
+1. Name a command to verify IP to IP connectivity. Give an example of using this in your command line.
+    - "ping" is the CLI tool to verify IP to IP connectivity.
+      <pre><code>
+      ping -c4 -4 google.com
+      </code></pre>
+2. Explain the difference between ping and telnet.
+    - Both can be used on the command-line.
+    - Ping checkes if two machines are connected. It uses the Internet Control Message Protocol (ICMP) to get an "echo" or a reply from the remote machine. Ping works on the OSI Layer 3: Network/Internet layer.
+    - Telnet is a server application tool to talk to remote comptuers. It uses Transmission Control Protocol/Internet Protocol (TCP/IP) to send and recieves commands via TCP ports (usually 23), and make remote user session. Telnet works on the OSI Layer 4: Transport Layer.
+3. What would it mean if a ping to 1.1.1.1 is successful, but telnet 1.1.1.1 80 fails?
+    - Ping: your local machine can reach the machine on network IP address 1.1.1.1.
+    - Telnet: your local machine can send server application commands on TCP Port 80 with machine network IP address of 1.1.1.1.
+
+**References:**
+https://www.quora.com/What-is-the-difference-between-Telnet-and-Ping
+https://www.ibm.com/docs/en/zos/2.2.0?topic=internets-tcpip-tcp-udp-ip-protocols
+https://www.geeksforgeeks.org/layers-of-osi-model/
+https://en.wikipedia.org/wiki/OSI_model#Comparison_to_other_networking_suites
+https://superuser.com/questions/552757/tcp-connections-session-and-ports
 
 ## Communications
 
