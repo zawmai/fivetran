@@ -96,7 +96,7 @@ Answer the following using [fivetran docs](https://fivetran.com/docs/getting-sta
     In most scenarios, we recommend the WAL method. You should only consider
     XMIN for updating records when WAL is not available.
     <br>
-    Currently, you can use WAL method with either pgoutput or test_decide plugins.
+    Currently, you can use WAL method with either pgoutput or test_decode plugins.
     You can see which plugins are supported for your Postgres instance here:
     https://fivetran.com/docs/databases/postgresql#supportedservices.
     <br>
@@ -108,9 +108,90 @@ Answer the following using [fivetran docs](https://fivetran.com/docs/getting-sta
     Best Regards,
     Zaw Mai
     </code></pre>
+2. “I’ve added a new Salesforce field, but I don’t see it listed in the schema tab. Can you investigate why?”
+    <pre><code>
+    Hi John Doe,
+    <br>
+    This can be caused one or more of the following:
+    <br>
+    1. Make sure fivetran has the right access permission for objects in Saleforce.
+    2. Review the synced field is not a formula or compound field types.
+    3. Review the table/field name from saleforce matches table/field name in fivetran.
+    4. Make sure there are no duplciate column fields or table with the same name.
+    <br>
+    Read more about syncing Salesforce fields here:
+    https://support.fivetran.com/hc/en-us/articles/360052347794
+    <br>
+    Please note you can sync formula fields but there's no gurantee of accurate
+    udpate because formula fields don't update when the source formula changes.
+    Read more here: https://fivetran.com/docs/applications/salesforce/formula
+    <br>
+    Please reach out if you have further questions. I'm happy to help.
+    <br>
+    Best Regards,
+    Zaw Mai
+    </code></pre>
+3. “What ETL/ELT steps does Fivetran take to move my data from my source database to my destination warehouse?”
+    <pre><code>
+    Hi John Doe,
+    <br>
+    Here's general steps overview of our ETL/ELT process of moving the source data
+    to the destination warehouse.
+    <br>
+    1.  Fivetran secures an encrypted connection to the one or more source
+        databases by using a pull or push connectors. Read more about connectors
+        here: https://support.fivetran.com/hc/en-us/articles/1500003152601#connect
+    <br>
+    2.  Then, our core engine normalizes, cleans, and de-duplicates the data
+        records to provide a optimal data format for the destination warehouse.
+    <br>
+    3.  Next, the formatted data is written to a temporary data store, waiting
+        to be processed within 24 hours.
+    <br>
+    4.  Finally, Fivetran encrypts and writes the data to the destination data
+        warehouse chunk by chunks. A success or a failed status will be sent via
+        email or you can check on the fivetran dashboard.
+    <br>
+    Read more about Fivetran's ETL/ELT high-level process overview here:
+    https://fivetran.com/docs/getting-started/architecture
+    <br>
+    Each data source and destinatation warehouse requires application-specific
+    prequisites before Fivetran can start syncing, replicating, and updating data.
+    Read more about setting up your source and destination applications here:
+    https://fivetran.com/docs/applications
+    <br>
+    Please reach out if you have further questions. I'm happy to help.
+    <br>
+    Best Regards,
+    Zaw Mai
+    </code></pre>
+
 ## Troubleshooting
 
 ### Challenge 1 - Logs / Monitoring
+
+You are tasked to analyze the following log file.
+
+1&nbsp;&nbsp;2018-10-11&nbsp;&nbsp;200&nbsp;&nbsp;192.168.11.1&nbsp;&nbsp;test
+2&nbsp;&nbsp;2019-10-04&nbsp;&nbsp;201&nbsp;&nbsp;192.168.11.1&nbsp;&nbsp;test
+4&nbsp;&nbsp;2018-08-11&nbsp;&nbsp;302&nbsp;&nbsp;212.168.11.1&nbsp;&nbsp;stage
+7&nbsp;&nbsp;2019-02-11&nbsp;&nbsp;400&nbsp;&nbsp;192.168.11.1&nbsp;&nbsp;ci
+10&nbsp;&nbsp;2017-10-11&nbsp;&nbsp;403&nbsp;&nbsp;192.167.11.1&nbsp;&nbsp;prod
+11&nbsp;&nbsp;2019-10-11&nbsp;&nbsp;500&nbsp;&nbsp;192.168.1.1&nbsp;&nbsp;test
+
+Using any method you like. Write the specific step by step instructions to execute the following tasks:
+- Extract all IP addresses into a single column.
+- Count unique IP addresses
+
+<pre><code>
+#!/bin/bash
+
+# extract all IP Addresses into a single column
+awk '{print $4}' log.txt
+
+# count unique IP addresses
+awk '{print $4}' log.txt | uniq -u | wc -l
+</code></pre>
 
 ### Challenge 2 - API GET
 
