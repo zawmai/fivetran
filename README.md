@@ -181,12 +181,13 @@ You are tasked to analyze the following log file.
 11&nbsp;&nbsp;2019-10-11&nbsp;&nbsp;500&nbsp;&nbsp;192.168.1.1&nbsp;&nbsp;test
 </pre>
 
+**Answers below:**
 Using any method you like. Write the specific step by step instructions to execute the following tasks:
 
 - Extract all IP addresses into a single column.
 - Count unique IP addresses
 
-Used bash scripts in Ubuntu 20.04 linux distro to solve it.
+Used bash scripts. Tested on Ubuntu 20.04 linux distro.
 <pre><code>
 #!/bin/bash
 
@@ -204,6 +205,35 @@ API GET challenge, have the candidate provide us with the results of a GET reque
 1. Sign up for a free Airtable account: [https://airtable.com/](https://airtable.com/)
 2. Navigate to the Airtable API documentation: [https://airtable.com/api](https://airtable.com/api)
 3. Provide a working API call to pull all names from the project tracker table using curl headers for authentication.
+
+**Answers below:**
+Used "[curl](https://devqa.io/curl-sending-api-requests/)" command-line tool to make API GET request.
+Used "[jq](https://stedolan.github.io/jq/)" command-line tool to parse json response body. Additional guide [here](https://www.baeldung.com/linux/jq-command-json).
+Tested on Ubuntu 20.04 linux distro.
+Tested on Airtable's prebuilt Project Tracker template.
+<pre><code>
+curl https://api.airtable.com/v0/app9S4NyrBMAWPLHM/Design%20projects?fields%5B%5D=Name -H "Authorization: Bearer keyOChwCcZRQcNfIu" | jq -r '.records | .[].fields.Name'
+</code></pre>
+
+**Results:**
+<pre><code>
+Lemon headband
+Coffee packaging
+Convertible 3000 laptop
+RITI media lab logo
+New Door brand identity
+Premier utility bike
+HGH injection device
+CubePad
+CMCA brand identity
+Locax notebook computer
+B11 bike saddle
+Hand hygiene system
+EngineerU brand identity
+Flapper brand identity
+443 Huntington brand identity
+Gotham City Parks brand identity
+</code></pre>
 
 ### Challenge 3 - Networking
 
