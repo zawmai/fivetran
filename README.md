@@ -251,6 +251,7 @@ Gotham City Parks brand identity
     - Telnet: your local machine can send server application commands on TCP Port 80 with machine network IP address of 1.1.1.1.
 
 **References:**
+
 https://www.quora.com/What-is-the-difference-between-Telnet-and-Ping
 https://www.ibm.com/docs/en/zos/2.2.0?topic=internets-tcpip-tcp-udp-ip-protocols
 https://www.geeksforgeeks.org/layers-of-osi-model/
@@ -261,4 +262,24 @@ https://superuser.com/questions/552757/tcp-connections-session-and-ports
 
 ### Challenge 1
 
+We received the following message from a customer on a new ticket and the ticket has been assigned to you:
+<pre>
+Hello,
+
+All ten of our connectors are failing to sync.  Please help!
+
+Thanks,
+John Doe
+</pre>
+1. What troubleshooting steps would you take with a general question like this?
+2. Please write your first response to this issue below.
+
 ### Challenge 2
+Assume that you provided a workaround for a bug. The customer is not satisfied with the workaround and indicates that our engineering team needs to re-prioritize the issue and provide an immediate fix since it is affecting their business. However, our engineering is guaranteeing a fix will be deployed at the end of the quarter. Please provide your response to the customer.
+
+<pre>
+Hi John Doe,
+
+Sincerely,
+Zaw Mai
+</pre>
