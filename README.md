@@ -206,7 +206,7 @@ API GET challenge, have the candidate provide us with the results of a GET reque
 2. Navigate to the Airtable API documentation: [https://airtable.com/api](https://airtable.com/api)
 3. Provide a working API call to pull all names from the project tracker table using curl headers for authentication.
 
-**Answers below:**
+**Answers below:**\
 Used "[curl](https://devqa.io/curl-sending-api-requests/)" command-line tool to make API GET request.
 Used "[jq](https://stedolan.github.io/jq/)" command-line tool to parse json response body. Additional guide [here](https://www.baeldung.com/linux/jq-command-json).
 Tested on Ubuntu 20.04 linux distro.
@@ -250,7 +250,7 @@ Gotham City Parks brand identity
     - Ping: your local machine can reach the machine on network IP address 1.1.1.1.
     - Telnet: your local machine can send server application commands on TCP Port 80 with machine network IP address of 1.1.1.1.
 
-**References:**
+**References:**\
 [https://www.quora.com/What-is-the-difference-between-Telnet-and-Ping](https://www.quora.com/What-is-the-difference-between-Telnet-and-Ping)
 [https://www.ibm.com/docs/en/zos/2.2.0?topic=internets-tcpip-tcp-udp-ip-protocols](https://www.ibm.com/docs/en/zos/2.2.0?topic=internets-tcpip-tcp-udp-ip-protocols)
 [https://www.geeksforgeeks.org/layers-of-osi-model/](https://www.geeksforgeeks.org/layers-of-osi-model/)
