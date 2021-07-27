@@ -1,9 +1,10 @@
 # Interview Assignment for FiveTran: Technical Support Engineer
 
-Database and tables were created in <b>Postgres SQL</b> for testing purposes.
+Database and tables were created in <b>Postgres SQL</b> for testing purposes. **PopSQL** client application was used to query database.
 
 ## DDL Create Tables
 
+![managerdetails](https://user-images.githubusercontent.com/10764631/127228972-596a3a87-3475-46f8-ae35-05a644ac4aa4.png)
 <pre><code>
 Create TABLE ManagerDetails (
     MANAGER_ID INT PRIMARY KEY,
@@ -16,13 +17,14 @@ INSERT INTO ManagerDetails VALUES (202, 'Walter White', 1, 100000);
 INSERT INTO ManagerDetails VALUES (201, 'Leia Organa', 3, 200000); 
 </code></pre>
 
+![employeesalary](https://user-images.githubusercontent.com/10764631/127228964-5c54ba4c-66a2-4308-b7af-354df55d089c.png)
 <pre><code>
 CREATE TABLE EmployeeSalary (
     EMP_ID INT PRIMARY KEY,
     PROJECT VARCHAR(2),
     SALARY INT,
     BONUS INT
-); 
+);
 INSERT INTO EmployeeSalary VALUES (101, 'P1', 8000, 500);
 INSERT INTO EmployeeSalary VALUES (102, 'P2', 10000, 1000);
 INSERT INTO EmployeeSalary VALUES (103, 'P3', 12000, 0);
@@ -31,6 +33,7 @@ INSERT INTO EmployeeSalary VALUES (105, 'P2', 15000, 1000);
 INSERT INTO EmployeeSalary VALUES (106, 'P0', 25000, 3000);
 </code></pre>
 
+![employeedetails](https://user-images.githubusercontent.com/10764631/127228952-b20a17fd-933f-40f9-b46b-7c3fee37b4ee.png)
 <pre><code>
 CREATE TABLE EmployeeDetails (
     EMP_ID INT PRIMARY KEY,
