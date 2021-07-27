@@ -172,17 +172,21 @@ Answer the following using [fivetran docs](https://fivetran.com/docs/getting-sta
 
 You are tasked to analyze the following log file.
 
+<pre>
 1&nbsp;&nbsp;2018-10-11&nbsp;&nbsp;200&nbsp;&nbsp;192.168.11.1&nbsp;&nbsp;test
 2&nbsp;&nbsp;2019-10-04&nbsp;&nbsp;201&nbsp;&nbsp;192.168.11.1&nbsp;&nbsp;test
 4&nbsp;&nbsp;2018-08-11&nbsp;&nbsp;302&nbsp;&nbsp;212.168.11.1&nbsp;&nbsp;stage
 7&nbsp;&nbsp;2019-02-11&nbsp;&nbsp;400&nbsp;&nbsp;192.168.11.1&nbsp;&nbsp;ci
 10&nbsp;&nbsp;2017-10-11&nbsp;&nbsp;403&nbsp;&nbsp;192.167.11.1&nbsp;&nbsp;prod
 11&nbsp;&nbsp;2019-10-11&nbsp;&nbsp;500&nbsp;&nbsp;192.168.1.1&nbsp;&nbsp;test
+</pre>
 
 Using any method you like. Write the specific step by step instructions to execute the following tasks:
+
 - Extract all IP addresses into a single column.
 - Count unique IP addresses
 
+Used bash scripts in Ubuntu 20.04 linux distro to solve it.
 <pre><code>
 #!/bin/bash
 
@@ -194,6 +198,12 @@ awk '{print $4}' log.txt | uniq -u | wc -l
 </code></pre>
 
 ### Challenge 2 - API GET
+
+API GET challenge, have the candidate provide us with the results of a GET request.
+
+1. Sign up for a free Airtable account: [https://airtable.com/](https://airtable.com/)
+2. Navigate to the Airtable API documentation: [https://airtable.com/api](https://airtable.com/api)
+3. Provide a working API call to pull all names from the project tracker table using curl headers for authentication.
 
 ### Challenge 3 - Networking
 
